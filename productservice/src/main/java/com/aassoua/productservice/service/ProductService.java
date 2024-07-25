@@ -20,6 +20,7 @@ public class ProductService {
 
     private final ProductRepo productRepo;
 
+
     @Transactional
     public List<ProductResponse> createProduct(List<ProductRequest> productRequests) {
         List<Product> products = productRequests

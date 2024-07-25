@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Iphone 13 Pro Max",
+    "description": "Titanium back and ...",
+    "price": 999.99
+  },
+  {
+    "name": "Samsung Galaxy S21",
+    "description": "Latest model with ...",
+    "price": 799.99
+  },
+  {
+    "name": "Google Pixel 6",
+    "description": "Smooth and fast ...",
+    "price": 699.99
+  }
+]
