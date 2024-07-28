@@ -14,6 +14,7 @@ import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -55,6 +56,7 @@ class ProductserviceApplicationTests {
     @Test
     public void shouldReadPructsFromFile() {
         List<ProductRequest> productRequests = getProductsFromJsonFile("src/test/resources/products.json");
+
         Assertions.assertNotNull(productRequests);
         Assertions.assertFalse(productRequests.isEmpty());
         Assertions.assertEquals(3, productRequests.size());
@@ -63,7 +65,7 @@ class ProductserviceApplicationTests {
                 List<ProductRequest> productList = new ArrayList();
                 productList.add(product);
                 String productString = objectMapper.writeValueAsString(productList);
-                mockMvc.perform(MockMvcRequestBuilders.post("/product")
+                mockMvc.perform(MockMvcRequestBuilders.post("/products")
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(productString))
                         .andExpect(status().isOk());
@@ -85,7 +87,7 @@ class ProductserviceApplicationTests {
         productRequests.add(productRequest);
         try {
             String productRequestsString = objectMapper.writeValueAsString(productRequests);
-            mockMvc.perform(MockMvcRequestBuilders.post("/product")
+            mockMvc.perform(MockMvcRequestBuilders.post("/products")
                             .contentType(MediaType.APPLICATION_JSON)
                             .content(productRequestsString))
                     .andExpect(status().isOk());
@@ -99,19 +101,21 @@ class ProductserviceApplicationTests {
 
     @Test
     public void shouldFetchAllProducts() {
-
         try {
-            mockMvc.perform(MockMvcRequestBuilders.get("/product")
+            // Perform the GET request to fetch all products
+            mockMvc.perform(MockMvcRequestBuilders.get("/products")
                             .contentType(MediaType.APPLICATION_JSON))
-                    .andExpect(status().isOk());
+                    .andExpect(MockMvcResultMatchers.status().isOk());
+
+            // Verify the number of products fetched
             int expectedProductCount = 4;
             int actualProductCount = productRepo.findAll().size();
             Assertions.assertEquals(expectedProductCount, actualProductCount, "The number of products fetched is not as expected");
 
-
-            Assertions.assertEquals(4, productRepo.findAll().size());
-        } catch (Exception error) {
-
+        } catch (Exception e) {
+            // Log the exception and fail the test
+            e.printStackTrace();
+            Assertions.fail("Exception occurred while fetching products: " + e.getMessage());
         }
     }
 

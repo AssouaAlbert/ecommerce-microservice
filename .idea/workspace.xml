@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8db0303f-c84b-4814-ad8c-34217e31448a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/test/java/com/aassoua/productservice/ProductserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/test/java/com/aassoua/productservice/ProductserviceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +29,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.InventoryServiceApplication.executor": "Run",
+    "Application.OrderServiceApplication.executor": "Run",
+    "Application.ProductserviceApplication (1).executor": "Run",
     "Application.ProductserviceApplication.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.ProductserviceApplicationTests.shouldFetchAllProducts.executor": "Run",
+    "JUnit.ProductserviceApplicationTests.shouldReadPructsFromFile.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "parent-microservice",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/assou/IdeaProjects/E-commerce-Microservice/productservice"
   }
@@ -59,9 +60,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductserviceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aassoua.productservice.ProductserviceApplication" />
-      <module name="main" />
+      <module name="productservice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.aassoua.productservice.*" />
@@ -88,11 +89,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductserviceApplicationTests.shouldReadPructsFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="productservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aassoua.productservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aassoua.productservice" />
+      <option name="MAIN_CLASS_NAME" value="com.aassoua.productservice.ProductserviceApplicationTests" />
+      <option name="METHOD_NAME" value="shouldReadPructsFromFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="null.shouldFetchAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aassoua.productservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aassoua.productservice" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="shouldFetchAllProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ProductserviceApplication (1)" />
+      <item itemvalue="Application.InventoryServiceApplication" />
+      <item itemvalue="JUnit.ProductserviceApplicationTests.shouldFetchAllProducts" />
+      <item itemvalue="JUnit.ProductserviceApplicationTests.shouldReadPructsFromFile" />
+      <item itemvalue="JUnit.null.shouldFetchAllProducts" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductserviceApplicationTests.shouldFetchAllProducts" />
+        <item itemvalue="JUnit.ProductserviceApplicationTests.shouldReadPructsFromFile" />
+        <item itemvalue="Application.ProductserviceApplication (1)" />
+        <item itemvalue="JUnit.null.shouldFetchAllProducts" />
         <item itemvalue="Application.InventoryServiceApplication" />
-        <item itemvalue="Application.ProductserviceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -117,5 +159,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/productservice/src/test/java/com/aassoua/productservice/ProductserviceApplicationTests.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/productservice/src/test/java/com/aassoua/productservice/ProductserviceApplicationTests.java</url>
+          <line>56</line>
+          <properties class="com.aassoua.productservice.ProductserviceApplicationTests" method="shouldReadPructsFromFile">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
