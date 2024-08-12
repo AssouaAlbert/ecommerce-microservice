@@ -25,8 +25,10 @@ public class OrderController {
     @PostMapping
     public ResponseEntity<Order> placeOrder(@RequestBody OrderRequestDto orderRequestDto) {
         Optional<Order> orderOptional = orderService.placeOrder(orderRequestDto);
+
         if (orderOptional.isPresent()) {
-            Order orderCreated= orderOptional.get();
+            System.out.println(orderOptional.get());
+            Order orderCreated = orderOptional.get();
             URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                     .buildAndExpand(orderCreated.getId())
                     .toUri();

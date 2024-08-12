@@ -26,9 +26,9 @@ public class InventoryController {
 
     @GetMapping("/inventory/{skuCode}")
     public ResponseEntity<InventoryResponse> isInStock(@PathVariable("skuCode") String skuCode) {
-        Optional<InventoryResponse> stock = inventoryService.getSingleStockBySkuCode(skuCode);
-        if (stock.isPresent()) {
-            return ResponseEntity.status(HttpStatusCode.valueOf(200)).body(stock.get());
+        Optional<InventoryResponse> stocks = inventoryService.getSingleStockBySkuCode(skuCode);
+        if (stocks.isPresent()) {
+            return ResponseEntity.status(HttpStatusCode.valueOf(200)).body(stocks.get());
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
