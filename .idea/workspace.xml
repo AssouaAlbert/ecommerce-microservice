@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db0303f-c84b-4814-ad8c-34217e31448a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/com/aassoua/DiscoveryServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/aassoua/inventory_service/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/aassoua/inventory_service/InventoryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/aassoua/productservice/ProductserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/aassoua/productservice/ProductserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +31,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -70,7 +78,7 @@
       <recent name="com.aassoua.order_service.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DiscoveryServer">
+  <component name="RunManager" selected="Application.OrderServiceApplication">
     <configuration name="DiscoveryServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aassoua.DiscoveryServer" />
       <module name="discovery-service" />
@@ -145,10 +153,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DiscoveryServer" />
         <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.ProductserviceApplication (1)" />
+        <item itemvalue="Application.DiscoveryServer" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
