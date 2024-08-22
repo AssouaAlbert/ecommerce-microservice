@@ -26,7 +26,7 @@ public class OrderService {
 
 
     private final OrderRepository orderRepository;
-    public final WebClient webClient;
+    public final WebClient.Builder webClientBuilder;
 
     @Transactional
     public Optional<Order> placeOrder(OrderRequestDto orderRequestDto) {
@@ -40,8 +40,9 @@ public class OrderService {
                 .map(OrderLineItemDto::getSkuCode).collect(Collectors.toList());
 
         if (!skuCodes.isEmpty()) {
-            String serviceBUrl = "http://localhost:8082/inventory";
-            List<InventoryResponse> inventoryResponseStocks = webClient
+            String serviceBUrl = "http://INVENTORY-SERVICE/inventory";
+            List<InventoryResponse> inventoryResponseStocks = webClientBuilder
+                    .build()
                     .get()
                     .uri(serviceBUrl, uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                     .retrieve()

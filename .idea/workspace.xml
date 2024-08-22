@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db0303f-c84b-4814-ad8c-34217e31448a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/aassoua/inventory_service/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/aassoua/inventory_service/InventoryServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/dto/InventoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/dto/InventoryResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productservice/src/main/java/com/aassoua/productservice/ProductserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/java/com/aassoua/productservice/ProductserviceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/productservice/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -50,7 +53,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.DiscoveryServer.executor": "Run",
-    "Application.InventoryServiceApplication.executor": "Run",
+    "Application.InventoryServiceApplication Instance 2.executor": "Run",
+    "Application.InventoryServiceApplication.executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.OrderServiceApplication.executor": "Run",
     "Application.ProductserviceApplication (1).executor": "Run",
@@ -78,7 +82,7 @@
       <recent name="com.aassoua.order_service.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrderServiceApplication">
+  <component name="RunManager" selected="Application.InventoryServiceApplication">
     <configuration name="DiscoveryServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aassoua.DiscoveryServer" />
       <module name="discovery-service" />
@@ -92,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aassoua.inventory_service.InventoryServiceApplication" />
       <module name="inventory-service" />
       <extension name="coverage">
@@ -118,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aassoua.order_service.OrderServiceApplication" />
       <module name="order-service" />
       <extension name="coverage">
@@ -131,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductserviceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aassoua.productservice.ProductserviceApplication" />
       <module name="productservice" />
       <extension name="coverage">
@@ -145,17 +149,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.InventoryServiceApplication" />
+      <item itemvalue="Application.OrderServiceApplication" />
       <item itemvalue="Application.DiscoveryServer" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.OrderServiceApplication" />
-      <item itemvalue="Application.ProductserviceApplication (1)" />
-      <item itemvalue="Application.InventoryServiceApplication" />
+      <item itemvalue="Application.ProductserviceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Application.InventoryServiceApplication" />
-        <item itemvalue="Application.ProductserviceApplication (1)" />
+        <item itemvalue="Application.ProductserviceApplication" />
         <item itemvalue="Application.DiscoveryServer" />
         <item itemvalue="Application.Main" />
       </list>
@@ -190,11 +192,6 @@
           <url>file://$PROJECT_DIR$/productservice/src/test/java/com/aassoua/productservice/ProductserviceApplicationTests.java</url>
           <line>35</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/aassoua/order_service/service/OrderService.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/productservice/src/test/java/com/aassoua/productservice/ProductserviceApplicationTests.java</url>
