@@ -18,6 +18,7 @@
         <module>order-service</module>
         <module>productservice</module>
         <module>discovery-service</module>
+        <module>api-gateway</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

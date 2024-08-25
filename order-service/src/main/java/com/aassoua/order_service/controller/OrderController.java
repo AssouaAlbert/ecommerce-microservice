@@ -27,7 +27,6 @@ public class OrderController {
         Optional<Order> orderOptional = orderService.placeOrder(orderRequestDto);
 
         if (orderOptional.isPresent()) {
-            System.out.println(orderOptional.get());
             Order orderCreated = orderOptional.get();
             URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                     .buildAndExpand(orderCreated.getId())
